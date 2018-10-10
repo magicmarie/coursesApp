@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Link</th>
+    <th>Duration</th>
+  </tr>
+  </thead>
+  <tbody>
+  <%#= render partial: 'tutorial_row', collection: @tutorials %>
+  <% @tutorials.each do |tutorial| %>
+    <tr>
+      <td><%= tutorial.title %></td>
+      <td><%= tutorial.author %></td>
+      <td><%= tutorial.link %></td>
+      <td><%= tutorial.duration %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+<%#= @tutorials.inspect %>
